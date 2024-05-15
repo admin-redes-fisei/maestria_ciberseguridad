@@ -1075,6 +1075,17 @@
 			}
 		}
 
+		document.getElementById("btn-proceso").addEventListener("click", function() {
+        
+			var pdfUrl = "files/req.pdf";
+	
+			var link = document.createElement("a");
+			link.href = pdfUrl;
+			link.download = "proceso_selección.pdf"; 
+			document.body.appendChild(link);
+			link.click();
+			document.body.removeChild(link); 
+		});
 
 		/**
 		 * Select2
