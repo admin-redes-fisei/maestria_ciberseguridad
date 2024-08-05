@@ -67,29 +67,6 @@
 		$window.on( 'scroll', scrollHandler );
 	}
 
-	document.getElementById("btn-bro").addEventListener("click", function() {
-        
-        var pdfUrl = "files/8 1010_27514_malla_curricular.pdf";
-
-        var link = document.createElement("a");
-        link.href = pdfUrl;
-        link.download = "brochure.pdf"; 
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link); 
-    });
-
-	document.getElementById("btn-malla").addEventListener("click", function() {
-        
-        var pdfUrl = "files/8 1010_27514_malla_curricular.pdf";
-
-        var link = document.createElement("a");
-        link.href = pdfUrl;
-        link.download = "mallacurricular.pdf"; 
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link); 
-    });
 	// Initialize scripts that require a loaded page
 	$window.on('load', function () {
 		// Page loader & Page transition
@@ -1097,18 +1074,6 @@
 				});
 			}
 		}
-
-		document.getElementById("btn-proceso").addEventListener("click", function() {
-        
-			var pdfUrl = "files/req.pdf";
-	
-			var link = document.createElement("a");
-			link.href = pdfUrl;
-			link.download = "proceso_selección.pdf"; 
-			document.body.appendChild(link);
-			link.click();
-			document.body.removeChild(link); 
-		});
 
 		/**
 		 * Select2
